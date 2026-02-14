@@ -1,1 +1,115 @@
+\documentclass[10pt, letterpaper]{article}
 
+% --- Packages ---
+\usepackage[hmargin=0.75in, vmargin=0.5in]{geometry} % Reduced margins
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+\usepackage{tabularx}
+
+% --- Formatting & Colors ---
+\definecolor{accent}{RGB}{40, 40, 40}
+\hypersetup{colorlinks=true, urlcolor=accent, linkcolor=accent, citecolor=accent}
+\setlength{\parindent}{0pt}
+\setlist[itemize]{noitemsep, topsep=1pt, partopsep=0pt, parsep=0pt, leftmargin=12pt}
+
+% Remove page number
+\pagestyle{empty}
+
+% --- Custom Commands ---
+\newcommand{\resumesection}[1]{
+    \vspace{6pt}
+    {\large \textbf{\textcolor{accent}{#1}}}
+    \vspace{1pt}\hrule
+    \vspace{4pt}
+}
+
+\newcommand{\experience}[4]{
+    \begin{tabularx}{\textwidth}{@{} X r @{}}
+        \textbf{#1} & #2 \\
+        \textit{#3} & \textit{#4} \\
+    \end{tabularx}
+}
+
+\newcommand{\project}[4]{
+    \vspace{2pt}
+    \textbf{#1} \hfill \href{#3}{\faIcon{globe} Live Demo} • \href{#4}{\faIcon{github} Source Code} \\
+    \textit{\small #2}
+    \vspace{1pt}
+}
+
+% --- Begin Document ---
+\begin{document}
+
+% --- Header ---
+\begin{center}
+    {\Huge \textbf{Sharad Chandel}} \\[2pt]
+    {\large Frontend Engineer} \\[4pt]
+    \faIcon{map-marker} Chandigarh, India •
+    \faIcon{envelope} \href{mailto:sharadchandel2005@gmail.com}{sharadchandel2005@gmail.com} •
+    \faIcon{phone} \href{tel:+917590889608}{+91 75908 89608} \\
+    \faIcon{linkedin} \href{https://linkedin.com/in/sharadchandel2005}{/sharadchandel2005} •
+    \faIcon{github} \href{https://github.com/SharadJ19}{/SharadJ19} •
+    \faIcon{code} \href{https://leetcode.com/u/SharadChandel/}{/SharadChandel} •
+    \faIcon{globe} \href{http://sharad.is-a.dev/}{sharad.is-a.dev}
+\end{center}
+
+% --- Technical Skills ---
+\resumesection{Technical Skills}
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+    \textbf{Languages:} & Java, JavaScript, TypeScript, HTML/CSS \\
+    \textbf{Frontend:} & Angular, Tailwind CSS, Angular Material, React (Comfortable) \\
+    \textbf{Backend:} & Node.js, Express, RESTful API Design, JWT Authentication, Spring Boot (Learning) \\
+    \textbf{Databases:} & MySQL, PostgreSQL, MongoDB\\
+    \textbf{Tools:} & Git, GitHub, Docker, Linux, Render, Vercel \\
+\end{tabularx}
+
+% --- Experience ---
+\resumesection{Experience}
+\experience{Software Engineer Intern}{Jan 2026 -- Present}
+{Quark Software Inc., Mohali}{}
+\begin{itemize}
+    \item Delivered two production-ready applications (GIF Aggregator, Icon Aggregator) within first month, mastering Angular components, services, and API integration at an accelerated pace
+    \item Owned end-to-end development of multiple Proof of Concepts implementing advanced Angular features including Routing, Reusable UI Modules, and complex Template-driven Forms
+    \item Championed UI consistency by building responsive interfaces with Angular Material while actively contributing to GitHub workflows in a 6-member cross-functional team
+    \item Proactively identified and documented critical bugs in current releases; trusted with testing a confidential unreleased project under strict QA guidelines
+\end{itemize}
+
+% --- Projects ---
+\resumesection{Projects}
+
+\project{HomeEase - Service Booking Platform}{MERN Stack (MongoDB, Express, React, Node.js), JWT, Socket.io}{https://homeease-oa77.onrender.com/}{https://github.com/SharadJ19/homeease}
+\begin{itemize}
+    \item Engineered a full-stack platform with two distinct user roles: customers and service providers
+    \item Designed a real-time booking management system with live status updates and notification features
+    \item Implemented a comprehensive review and rating system to maintain service quality and user trust
+    \item Developed a secure authentication flow using JWT tokens and protected API routes
+\end{itemize}
+
+\project{ArtCraft - E-commerce Platform}{React, Node.js, Express, MySQL, JWT}{https://artcraft.onrender.com/}{https://github.com/sharadj19/artcraft}
+\begin{itemize}
+    \item Built a complete e-commerce solution with product catalog, search, filtering, and shopping cart functionality
+    \item Created an admin dashboard for product and inventory management with full CRUD operations
+    \item Integrated a secure checkout process with client-side and server-side validation
+    \item Designed a responsive user interface with a focus on mobile-friendly design
+\end{itemize}
+
+\project{AnonChat - Real-time Chat Application}{Socket.io, Node.js, Express, Vanilla JS}{https://anonchat-w4dw.onrender.com/}{https://github.com/SharadJ19/anonchat}
+\begin{itemize}
+    \item Developed a real-time chat application supporting multiple concurrent users with instant messaging
+    \item Implemented live polling features that sync across all connected clients in real-time
+    \item Engineered an ephemeral chat system where messages are cleared upon user disconnection
+    \item Managed WebSocket connections efficiently to handle real-time events and broadcasting
+\end{itemize}
+
+% --- Education ---
+\resumesection{Education}
+\experience{B.E. Computer Science}{Expected 2026}{Chitkara University, Himachal Pradesh}{}
+\vspace{-6pt}
+\begin{itemize}
+    \item Relevant Coursework: Data Structures, Algorithms, Database Management Systems, Object-Oriented Programming, Web Technologies
+\end{itemize}
+
+\end{document}
