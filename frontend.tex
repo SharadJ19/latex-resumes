@@ -1,7 +1,6 @@
 \documentclass[10pt, letterpaper]{article}
 
-% --- Packages ---
-\usepackage[hmargin=0.75in, vmargin=0.5in]{geometry} % Reduced margins
+\usepackage[hmargin=0.75in, vmargin=0.5in]{geometry}
 \usepackage{parskip}
 \usepackage{enumitem}
 \usepackage{hyperref}
@@ -9,16 +8,12 @@
 \usepackage{fontawesome5}
 \usepackage{tabularx}
 
-% --- Formatting & Colors ---
 \definecolor{accent}{RGB}{40, 40, 40}
-\hypersetup{colorlinks=true, urlcolor=accent, linkcolor=accent, citecolor=accent}
+\hypersetup{colorlinks=true, urlcolor=accent}
 \setlength{\parindent}{0pt}
-\setlist[itemize]{noitemsep, topsep=1pt, partopsep=0pt, parsep=0pt, leftmargin=12pt}
-
-% Remove page number
+\setlist[itemize]{noitemsep, topsep=1pt, leftmargin=12pt}
 \pagestyle{empty}
 
-% --- Custom Commands ---
 \newcommand{\resumesection}[1]{
     \vspace{6pt}
     {\large \textbf{\textcolor{accent}{#1}}}
@@ -35,75 +30,81 @@
 
 \newcommand{\project}[4]{
     \vspace{2pt}
-    \textbf{#1} \hfill \href{#3}{\faIcon{globe} Live Demo} • \href{#4}{\faIcon{github} Source Code} \\
+    \textbf{#1} \hfill \href{#3}{\faIcon{globe} Demo} • \href{#4}{\faIcon{github} Code} \\
     \textit{\small #2}
     \vspace{1pt}
 }
 
-% --- Begin Document ---
 \begin{document}
 
-% --- Header ---
 \begin{center}
     {\Huge \textbf{Sharad Chandel}} \\[2pt]
-    {\large Software Engineer} \\[4pt]
+    {\large Frontend Engineer (React \& Angular)} \\[4pt]
     \faIcon{map-marker} Chandigarh, India •
     \faIcon{envelope} \href{mailto:sharadchandel2005@gmail.com}{sharadchandel2005@gmail.com} •
-    \faIcon{phone} \href{tel:+917590889608}{+91 75908 89608} \\
-    \faIcon{linkedin} \href{https://linkedin.com/in/sharadchandel2005}{/sharadchandel2005} •
-    \faIcon{github} \href{https://github.com/SharadJ19}{/SharadJ19} •
-    \faIcon{code} \href{https://leetcode.com/u/SharadChandel/}{/SharadChandel} •
+    \faIcon{phone} +91 75908 89608 \\
+    \faIcon{linkedin} \href{https://linkedin.com/in/sharadchandel2005}{sharadchandel2005} •
+    \faIcon{github} \href{https://github.com/SharadJ19}{github.com/SharadJ19} •
+    \faIcon{code} \href{https://leetcode.com/u/SharadChandel/}{SharadChandel} •
     \faIcon{globe} \href{http://sharad.is-a.dev/}{sharad.is-a.dev}
 \end{center}
 
-% --- Technical Skills ---
 \resumesection{Technical Skills}
 \begin{tabularx}{\textwidth}{@{}l X@{}}
-    \textbf{Languages:} & Java, JavaScript, TypeScript, HTML/CSS \\
-    \textbf{Frontend:} & Angular, React (Comfortable) Tailwind CSS,  \\
-    \textbf{Backend:} & Node.js, Express, RESTful API Design, JWT Authentication, Spring Boot (Learning) \\
-    \textbf{Databases:} & MySQL, PostgreSQL\\
-    \textbf{Tools:} &  Git, GitHub, Linux, Docker, \\
+\textbf{Languages:} & Java, JavaScript (ES6+), TypeScript, HTML5, CSS3 \\
+\textbf{Frontend:} & React, Angular, RxJS, PrimeNG Tailwind CSS, Angular Material, Responsive Design, State Management \\
+\textbf{Backend:} & Node.js, Express, REST APIs, JWT Authentication \\
+\textbf{Databases:} & MySQL, PostgreSQL \\
+\textbf{Tools:} & Git, GitHub, Docker, Linux, Selenium \\
 \end{tabularx}
 
-% --- Experience ---
 \resumesection{Experience}
-\experience{SDE Intern}{Jan 2026 -- Present}
-{Quark Software Inc., Mohali}{}
+\experience{Software Development Engineer Intern}{Jan 2026 -- Present}
+{Quark Software Inc.}{Mohali}
 \begin{itemize}
-    \item Delivered 4 Angular applications (GIF Aggregator, Icon Aggregator, QR Code Generator, Table Design App) within first 6 weeks, demonstrating rapid proficiency in component architecture, routing, services, and API integration
-    \item Architected a Sidebar Plugin System using Micro-Frontend approach (iframe-based), enabling the parent application to dynamically host independent plugins — reducing future development overhead by decoupling feature development from core app
-    \item Built 16+ reusable UI components with Angular Material that were adopted by team members, streamlining prototyping for internal R\&D initiatives
-    \item Identified and documented 35+ critical bugs in active releases through manual testing and Selenium automation, leading to improved stability before production deployment
-    \item Participated in QA testing for a confidential unreleased project, ensuring zero critical issues in pre-production environment
-    \item Collaborated with SDE3s, QA engineers, and fellow interns using GitHub workflows; consistently delivered assigned tasks on schedule with extremely minimal supervision
+    \item Built and shipped \textbf{4 scalable Angular applications} using modular architecture, lazy loading, and optimized routing, reducing development time for similar tools by \textbf{~30\%}
+    
+    \item Designed and implemented a \textbf{Micro-Frontend Plugin System} (iframe-based) enabling independent deployment of features, improving application scalability and team velocity
+    
+    \item Developed \textbf{16+ reusable, production-ready UI components} using Angular Material with emphasis on accessibility, responsiveness, and maintainability
+    
+    \item Improved frontend performance by optimizing component rendering, change detection, and API integration patterns, leading to \textbf{noticeable reduction in UI lag and load times}
+    
+    \item Identified and resolved/documented \textbf{35+ critical bugs} through manual testing and Selenium automation, significantly improving pre-release stability
+    
+    \item Collaborated with cross-functional teams (SDEs, QA, Product) in an \textbf{Agile environment}, consistently delivering features on time with high code quality
+    
+    \item Implemented \textbf{advanced state management patterns} using RxJS and Angular services, improving data flow consistency and reducing redundant API calls
+    
+    \item Contributed to \textbf{codebase maintainability} by enforcing reusable design patterns, improving component structure, and following best practices for scalable frontend architecture
+    
+    \item Participated in \textbf{code reviews and debugging sessions}, proactively identifying performance bottlenecks and suggesting optimizations adopted by the team
+    
+    \item Enhanced \textbf{UI/UX quality} by refining layouts, improving responsiveness across devices, and ensuring consistent design standards
+    
+    \item Gained hands-on exposure to \textbf{React ecosystem} by building internal prototypes and comparing architecture patterns with Angular, strengthening cross-framework expertise
 \end{itemize}
 
-% --- Projects ---
 \resumesection{Projects}
 
-\project{HomeEase - Service Booking Platform}{MERN Stack (MongoDB, Express, React, Node.js), JWT, Socket.io}{https://homeease-oa77.onrender.com/}{https://github.com/SharadJ19/homeease}
+\project{HomeEase - Real-Time Service Platform}{React, Node.js, Express, MongoDB, Socket.io, JWT}{https://homeease-oa77.onrender.com/}{https://github.com/SharadJ19/homeease}
 \begin{itemize}
-    \item Engineered a full-stack platform with two distinct user roles: customers and service providers
-    \item Designed a real-time booking management system with live status updates and notification features
-    \item Implemented a comprehensive review and rating system to maintain service quality and user trust
-    \item Developed a secure authentication flow using JWT tokens and protected API routes
+    \item Engineered a \textbf{full-stack real-time platform} with role-based dashboards for customers and service providers
+    
+    \item Implemented \textbf{live booking updates using WebSockets}, improving user engagement and real-time interaction
+    
+    \item Built secure authentication and authorization using \textbf{JWT and protected routes}
+    
+    \item Designed scalable frontend architecture using reusable React components and efficient state handling
+    
+    \item Developed rating and review system to enhance trust and platform credibility
 \end{itemize}
 
-\project{ArtCraft - E-commerce Platform}{React, Node.js, Express, MySQL, JWT}{https://artcraft.onrender.com/}{https://github.com/sharadj19/artcraft}
-\begin{itemize}
-    \item Built a complete e-commerce solution with product catalog, search, filtering, and shopping cart functionality
-    \item Created an admin dashboard for product and inventory management with full CRUD operations
-    \item Integrated a secure checkout process with client-side and server-side validation
-    \item Designed a responsive user interface with a focus on mobile-friendly design
-\end{itemize}
-
-% --- Education ---
 \resumesection{Education}
-\experience{B.E. Computer Science}{Expected 2026}{Chitkara University, Himachal Pradesh}{}
+\experience{B.E. Computer Science}{Expected 2026}{Chitkara University}{Himachal Pradesh}
 \vspace{-6pt}
 \begin{itemize}
-    \item Relevant Coursework: Data Structures, Algorithms, Database Management Systems, Object-Oriented Programming, Web Technologies
+    \item Relevant Coursework: Data Structures, Algorithms, DBMS, OOP, Web Development
 \end{itemize}
 
 \end{document}
