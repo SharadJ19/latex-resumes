@@ -15,117 +15,125 @@
 \pagestyle{empty}
 
 \newcommand{\resumesection}[1]{
-    \vspace{6pt}
-    {\large \textbf{\textcolor{accent}{#1}}}
-    \vspace{2pt}\hrule
-    \vspace{4pt}
+\vspace{6pt}
+{\large \textbf{\textcolor{accent}{#1}}}
+\vspace{2pt}
+\hrule
+\vspace{4pt}
 }
 
 \newcommand{\experience}[4]{
-    \begin{tabularx}{\textwidth}{@{} X r @{}}
-        \textbf{#1} & #2 \\
-        \textit{#3} & \textit{#4} \\
-    \end{tabularx}
+\begin{tabularx}
+	{\textwidth}{@{} X r @{}} \textbf{#1} & #2 \\ \textit{#3} & \textit{#4} \\
+\end{tabularx}
 }
 
 \newcommand{\project}[4]{
-    \vspace{2pt}
-    \textbf{#1} \hfill \href{#3}{\faIcon{globe} Demo} • \href{#4}{\faIcon{github} Code} \\
-    \textit{\small #2}
-    \vspace{2pt}
+\vspace{2pt}
+\textbf{#1} \hfill \href{#3}{\faIcon{globe} Demo} •
+\href{#4}{\faIcon{github} Code} \\ \textit{\small #2}
+\vspace{2pt}
 }
 
 \begin{document}
+	\begin{center}
+		{\Huge \textbf{Sharad Chandel}} \\[2pt] {\large Software Engineer (Full-Stack)}
+		\\[4pt]
 
-\begin{center}
-    {\Huge \textbf{Sharad Chandel}} \\[2pt]
-    {\large Software Development Engineer (Full-Stack)} \\[4pt]
+		\faIcon{map-marker} Chandigarh, India • \faIcon{envelope} \href{mailto:sharadchandel2005@gmail.com}{sharadchandel2005@gmail.com}
+		• \faIcon{phone} +91 75908 89608 \\
 
-    \faIcon{map-marker} Chandigarh, India •
-    \faIcon{envelope} \href{mailto:sharadchandel2005@gmail.com}{sharadchandel2005@gmail.com} •
-    \faIcon{phone} +91 75908 89608 \\
+		\faIcon{linkedin} \href{https://linkedin.com/in/sharadchandel2005}{sharadchandel2005}
+		• \faIcon{github} \href{https://github.com/SharadJ19}{SharadJ19} • \faIcon{code}
+		\href{https://leetcode.com/u/SharadChandel/}{SharadChandel} • \faIcon{globe}
+		\href{http://sharad.is-a.dev/}{sharad.is-a.dev}
+	\end{center}
 
-    \faIcon{linkedin} \href{https://linkedin.com/in/sharadchandel2005}{sharadchandel2005} •
-    \faIcon{github} \href{https://github.com/SharadJ19}{SharadJ19} •
-    \faIcon{code} \href{https://leetcode.com/u/SharadChandel/}{SharadChandel} •
-    \faIcon{globe} \href{http://sharad.is-a.dev/}{sharad.is-a.dev}
-\end{center}
+	% =========================
+	\resumesection{Technical Skills}
 
-% =========================
-\resumesection{Technical Skills}
+	\begin{tabularx}
+		{\textwidth}{@{}l X@{}} \textbf{Languages:} & Java, JavaScript, TypeScript \\
+		\textbf{Frontend:} & React, Angular, RxJS, Tailwind CSS, Responsive Design
+		\\ \textbf{Backend:} & Node.js, Express.js, REST APIs, JWT \\ \textbf{Databases:}
+		& PostgreSQL, MongoDB, Redis \\ \textbf{Tools:} & Docker, Git, Linux, Postman,
+		Swagger, Jest, Selenium \\ \textbf{Core:} & Data Structures \& Algorithms,
+		System Design, Microservices, Caching, Event-Driven Architecture \\
+	\end{tabularx}
 
-\begin{tabularx}{\textwidth}{@{}l X@{}}
-\textbf{Languages:} & Java, JavaScript (ES6+), TypeScript, SQL \\
-\textbf{Frontend:} & React, Angular, RxJS, Angular Material, Tailwind CSS, Responsive Design \\
-\textbf{Backend:} & Node.js, Express.js, NestJS, REST APIs, GraphQL, JWT, OAuth2, WebSockets \\
-\textbf{Databases:} & PostgreSQL, MySQL, MongoDB, Redis \\
-\textbf{Tools:} & Docker, RabbitMQ, Git, Linux, Postman, Swagger, Jest, Selenium \\
-\textbf{Core:} & Data Structures \& Algorithms, System Design, Microservices, Caching, Event-Driven Architecture \\
-\end{tabularx}
+	% =========================
+	\resumesection{Experience}
 
-% =========================
-\resumesection{Experience}
+	\experience{Software Development Engineer Intern}{Jan 2026 -- June 2026} {Quark Software Inc.}{Mohali}
 
-\experience{Software Development Engineer Intern}{Jan 2026 -- Present}
-{Quark Software Inc.}{Mohali}
+	\begin{itemize}
+		\item Built and delivered \textbf{3 sidebar plugins} using Angular and Node.js,
+			reducing development time for similar tools by \textbf{~30\%}
 
-\begin{itemize}
+		\item Designed a \textbf{micro-frontend plugin system} integrated with
+			backend services, enabling independent deployments and improving scalability
 
-\item Built and delivered \textbf{4 full-stack applications} using Angular and Node.js/NestJS, reducing development time for similar tools by \textbf{~30\%}
+		\item Developed \textbf{scalable REST APIs} with validation, rate limiting,
+			and Redis caching, improving API throughput by \textbf{20–30\%}
 
-\item Designed a \textbf{micro-frontend plugin system} integrated with backend services, enabling independent deployments and improving scalability
+		\item Implemented \textbf{secure authentication systems} using JWT, OAuth2,
+			and role-based access control across frontend and backend
 
-\item Developed \textbf{scalable REST and GraphQL APIs} with validation, rate limiting, and Redis caching, improving API throughput by \textbf{20–30\%}
+		\item Optimized frontend rendering (lazy loading, change detection) and
+			backend queries/caching, significantly reducing latency and UI lag
 
-\item Implemented \textbf{secure authentication systems} using JWT, OAuth2, and role-based access control across frontend and backend
+		\item Built \textbf{10+ reusable UI components} and modular backend services,
+			improving maintainability and developer productivity
 
-\item Optimized frontend rendering (lazy loading, change detection) and backend queries/caching, significantly reducing latency and UI lag
+		\item Developed \textbf{real-time systems} using WebSockets for live updates
+			and asynchronous processing
 
-\item Built \textbf{25+ reusable UI components} and modular backend services, improving maintainability and developer productivity
+		\item Identified and fixed \textbf{20+ critical bugs} using debugging and
+			Selenium automation, improving release stability
 
-\item Developed \textbf{real-time systems} using WebSockets and RabbitMQ for live updates and asynchronous processing
+		\item Collaborated in Agile teams, contributing to architecture decisions, code
+			reviews, and performance optimizations
 
-\item Identified and fixed \textbf{35+ critical bugs} using debugging and Selenium automation, improving release stability
+		\item Implemented \textbf{centralized logging and error monitoring} across
+			services, improving debugging efficiency and reducing issue resolution time
+			during production incidents
 
-\item Collaborated in Agile teams, contributing to architecture decisions, code reviews, and performance optimizations
+		\item Contributed to \textbf{CI/CD pipeline improvements} by automating
+			build, test, and deployment workflows, ensuring faster and more reliable releases
 
-\item Implemented \textbf{centralized logging and error monitoring} across services, improving debugging efficiency and reducing issue resolution time during production incidents
+		\item Designed and optimized \textbf{database schemas and indexing
+			strategies}, improving query performance and ensuring efficient data retrieval
+			at scale
+	\end{itemize}
 
-\item Contributed to \textbf{CI/CD pipeline improvements} by automating build, test, and deployment workflows, ensuring faster and more reliable releases
+	% =========================
+	\resumesection{Projects}
 
-\item Designed and optimized \textbf{database schemas and indexing strategies}, improving query performance and ensuring efficient data retrieval at scale
+	\project{HomeEase - Real-Time Service Platform} {React, Node.js, PostgreSQL, Redis, Socket.io, JWT}
+	{https://homeease-oa77.onrender.com/} {https://github.com/SharadJ19/homeease}
 
-\end{itemize}
+	\begin{itemize}
+		\item Engineered a \textbf{full-stack real-time platform} with role-based
+			dashboards for customers and service providers
 
-% =========================
-\resumesection{Projects}
+		\item Built secure REST APIs with authentication, caching, and validation,
+			ensuring efficient and reliable data handling
 
-\project{HomeEase - Real-Time Service Platform}
-{React, Node.js, NestJS, PostgreSQL, Redis, Socket.io, RabbitMQ, JWT}
-{https://homeease-oa77.onrender.com/}
-{https://github.com/SharadJ19/homeease}
+		\item Implemented \textbf{real-time booking and notifications} using
+			WebSockets and message queues
 
-\begin{itemize}
+		\item Designed modular frontend and backend architecture for scalability and
+			maintainability
+	\end{itemize}
 
-\item Engineered a \textbf{full-stack real-time platform} with role-based dashboards for customers and service providers
+	% =========================
+	\resumesection{Education}
 
-\item Built secure REST APIs with authentication, caching, and validation, ensuring efficient and reliable data handling
+	\experience{B.E. Computer Science}{Expected 2026} {Chitkara University}{Himachal Pradesh}
 
-\item Implemented \textbf{real-time booking and notifications} using WebSockets and message queues
-
-\item Designed modular frontend and backend architecture for scalability and maintainability
-
-\end{itemize}
-
-% =========================
-\resumesection{Education}
-
-\experience{B.E. Computer Science}{Expected 2026}
-{Chitkara University}{Himachal Pradesh}
-
-\vspace{-6pt}
-\begin{itemize}
-\item Relevant Coursework: Data Structures, Algorithms, DBMS, OOP, Distributed Systems
-\end{itemize}
-
+	\vspace{-6pt}
+	\begin{itemize}
+		\item Relevant Coursework: Data Structures, Algorithms, DBMS, OOP,
+			Distributed Systems
+	\end{itemize}
 \end{document}
