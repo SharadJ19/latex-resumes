@@ -1,0 +1,113 @@
+\documentclass[10pt, letterpaper]{article}
+
+\usepackage[hmargin=0.65in, vmargin=0.45in]{geometry}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+\usepackage{tabularx}
+
+\definecolor{accent}{RGB}{40, 40, 40}
+\hypersetup{colorlinks=true, urlcolor=accent}
+\setlength{\parindent}{0pt}
+\setlist[itemize]{noitemsep, topsep=1.5pt, leftmargin=12pt}
+\pagestyle{empty}
+
+\newcommand{\resumesection}[1]{
+\vspace{6pt}
+{\normalsize \textbf{\textcolor{accent}{#1}}}
+\vspace{2pt}
+\hrule
+\vspace{3pt}
+}
+
+\newcommand{\experience}[4]{
+\begin{tabularx}{\textwidth}{@{} X r @{}}
+\textbf{#1} & #2 \\
+\textit{#3} & \textit{#4} \\
+\end{tabularx}
+\vspace{-2pt}
+}
+
+\newcommand{\project}[4]{
+\vspace{2pt}
+\textbf{#1} \hfill \href{#3}{\faIcon{globe} chowkspot.vercel.app} \,•\, \href{#4}{\faIcon{github} Code} \\
+\textit{\small #2}
+\vspace{2pt}
+}
+
+\begin{document}
+% Clean, linear ATS-friendly header block
+\begin{center}
+	{\Large \textbf{Sharad Chandel}} \\[2pt]
+	{\normalsize \textbf{Software Engineer (Full-Stack)}}
+	\vspace{5pt}
+
+	\small
+	\faIcon{map-marker} Chandigarh, India \,•\,
+	\faIcon{envelope} \href{mailto:sharadchandel2005@gmail.com}{sharadchandel2005@gmail.com} \,•\,
+	\faIcon{phone} +91 75908 89608 \\[2.5pt]
+	\faIcon{linkedin} \href{https://linkedin.com/in/sharadchandel2005}{linkedin.com/in/sharadchandel2005} \,•\,
+	\faIcon{github} \href{https://github.com/SharadJ19}{github.com/SharadJ19} \,•\,
+	\faIcon{code} \href{https://leetcode.com/u/SharadChandel/}{leetcode.com/u/SharadChandel} \,•\,
+	\faIcon{globe} \href{http://sharad.is-a.dev/}{sharad.is-a.dev}
+\end{center}
+
+\vspace{3pt}
+
+% =========================
+\resumesection{Technical Skills}
+
+\begin{tabularx}{\textwidth}{@{} >{\bfseries}l X @{}}
+	Languages: & Java, JavaScript, TypeScript                                         \\
+	Frontend:  & React, Angular, RxJS, Tailwind CSS, Responsive Design                \\
+	Backend:   & Node.js, Express.js, REST APIs, JWT                                  \\
+	Databases: & PostgreSQL, Redis                                                    \\
+	Tools:     & Docker, Git, Linux, Postman, Swagger, Jest, Selenium                 \\
+	Core:      & Data Structures \& Algorithms, System Design, Microservices, Caching \\
+\end{tabularx}
+
+% =========================
+\resumesection{Professional Experience}
+
+\experience{Software Development Engineer Intern}{Jan 2026 -- June 2026} {Quark Software Inc.}{Mohali}
+
+\begin{itemize}
+	\item Built and delivered \textbf{3 sidebar plugins} using Angular and Node.js, reducing development time by \textbf{~30\%}
+	\item Designed a \textbf{micro-frontend plugin system} integrated with backend services, enabling independent deployments and scalability
+	\item Developed \textbf{scalable REST APIs} with validation, rate limiting, and Redis caching, improving throughput by \textbf{20--30\%}
+	\item Implemented \textbf{secure authentication systems} using JWT, OAuth2, and role-based access control across services
+	\item Optimized frontend rendering (lazy loading, change detection) and backend queries, significantly reducing latency and UI lag
+	\item Built \textbf{10+ reusable UI components} and modular backend services, improving maintainability and developer productivity
+	\item Developed \textbf{real-time systems} using WebSockets for live updates and asynchronous message processing
+	\item Identified and fixed \textbf{20+ critical bugs} using debugging and Selenium automation, improving release stability
+	\item Contributed to \textbf{CI/CD pipeline improvements} by automating build, test, and deployment workflows
+	\item Designed and optimized \textbf{database schemas and indexing strategies}, ensuring efficient data retrieval at scale
+\end{itemize}
+
+% =========================
+\resumesection{Technical Projects}
+
+\project{ChowkSpot - Real-Time P2P Marketplace Platform} {React, Node.js, Express, PostgreSQL, Socket.io, JWT, Render}
+{https://chowkspot.vercel.app/} {https://github.com/SharadJ19/chowkspot}
+
+\begin{itemize}
+	\item Engineered a full-stack local service marketplace connecting customers and service providers across \textbf{80+ specialized service categories}.
+	\item Designed a robust relational database schema using PostgreSQL and Drizzle ORM, implementing atomic transaction scripts for bulk seeding of users, bookings, and reviews.
+	\item Developed secure REST endpoints backed by JWT and dual token-refresh interceptor architecture to enforce role-based access control.
+	\item Implemented bi-directional real-time event synchronization and client notifications using Socket.io WebSockets for live booking status transitions.
+	\item Handled cloud serverless spin-down latency by designing a custom health-check polling component featuring automated exponential fallback feedback.
+	\item Configured containerized production deployments via Docker and Infrastructure-as-Code YAML configurations targeting low-latency regional servers.
+\end{itemize}
+
+% =========================
+\resumesection{Education}
+
+\experience{B.E. Computer Science}{Expected 2026} {Chitkara University}{Himachal Pradesh}
+
+\vspace{-4pt}
+\begin{itemize}
+	\item Relevant Coursework: Data Structures, Algorithms, DBMS, Object-Oriented Programming, Distributed Systems
+\end{itemize}
+\end{document}
