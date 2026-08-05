@@ -4,4 +4,4 @@ This repository contains my professional resume written in **LaTeX**, maintained
 
 ## Resume File 🗂️
 
-- `sde_fullstack.tex` — Main SDE / Full-Stack resume.
+- `resume.tex` — Main SDE / Full-Stack resume.
